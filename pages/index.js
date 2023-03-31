@@ -8,7 +8,6 @@ import MainSection from '@/components/MainSection'
 
 const inter = Inter({ subsets: ['latin'] }) 
 
-
 export default function Home() {
   return (
     <div>
