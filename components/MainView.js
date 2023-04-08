@@ -131,8 +131,8 @@ export default function MainView() {
                 <Calculator />
               </calc.Provider>
             </div>
-            <div className="bg-cover bg-center bg-[url('../images/apple.jpeg')] lg:w-1/2 md:1/3 md:block hidden ">
-              <div ref={resultsDiv} className='bg-white w-full h-0 duration-300 overflow-hidden'>
+            <div className="bg-cover bg-center bg-[url('../images/apple.jpeg')] lg:w-1/2 w-full md:block lg:static absolute">
+              <div ref={resultsDiv} className='bg-white h-0 duration-300 overflow-hidden'>
                 <div className='text-xl font-[400] pb-5'> 
                   {summary}
                 </div>
@@ -148,7 +148,7 @@ export default function MainView() {
                   Aby realizować cel {aim} dostarczaj dziennie
                 </div>
                 <p className='text-2xl bg-green-500 w-32 text-white'>{Math.round(resultCPM)} kcal</p>
-                <div onClick={handleFreeDishes} className='bg-green-500 text-white mt-10 w-[250px] px-3 py-2 rounded-md text-xl text-center cursor-pointer font-[200]' >Przykładowe przepisy</div>
+                <div onClick={handleFreeDishes} className='bg-green-500 text-white mt-10 w-[250px] px-3 py-2 rounded-md text-xl text-center cursor-pointer font-[200]'>Przykładowe przepisy</div>
               </div>
             </div>
         </div>
